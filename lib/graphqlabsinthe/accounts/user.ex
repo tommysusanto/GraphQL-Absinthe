@@ -8,7 +8,6 @@ defmodule Graphqlabsinthe.Accounts.User do
     field :home_address, :string
     field :name, :string
     belongs_to :friends, Graphqlabsinthe.Accounts.User, foreign_key: :friends_id
-
     timestamps()
   end
 
