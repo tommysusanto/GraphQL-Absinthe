@@ -15,7 +15,7 @@ defmodule Graphqlabsinthe.Accounts.User do
   @doc false
   def changeset(user, attrs) do
     user
-    |> cast(attrs, [:name, :home_address, :email])
+    |> cast(attrs, [:name, :home_address, :email, :friends_id])
     |> validate_required([:name, :home_address, :email])
   end
 end
